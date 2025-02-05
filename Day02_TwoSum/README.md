@@ -1,21 +1,21 @@
-You are given two strings s1 and s2 of equal length. A string swap is an operation where you choose two indices in a string (not necessarily different) and swap the characters at these indices.
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-Return true if it is possible to make both strings equal by performing at most one string swap on exactly one of the strings. Otherwise, return false.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
 
  
 
 Example 1:
 
-Input: s1 = "bank", s2 = "kanb"
-Output: true
-Explanation: For example, swap the first character with the last character of s2 to make "bank".
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Example 2:
 
-Input: s1 = "attack", s2 = "defend"
-Output: false
-Explanation: It is impossible to make them equal with one string swap.
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
 Example 3:
 
-Input: s1 = "kelb", s2 = "kelb"
-Output: true
-Explanation: The two strings are already equal, so no string swap operation is required.
+Input: nums = [3,3], target = 6
+Output: [0,1]
